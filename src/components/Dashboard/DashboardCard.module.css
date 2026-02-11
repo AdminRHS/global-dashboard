@@ -1,0 +1,15 @@
+/* DashboardCard styles */
+
+.dashboard-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.dashboard-card:hover {
+  border-color: var(--color-primary);
+}
+
+.dashboard-card:active {
+  transform: translateY(0) !important;
+  box-shadow: var(--shadow-sm) !important;
+}

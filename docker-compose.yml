@@ -1,5 +1,5 @@
 services:
-  dashboard:
+  global-dashboard:
     image: global-dashboard:latest
     container_name: global-dashboard
     restart: unless-stopped

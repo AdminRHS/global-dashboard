@@ -55,7 +55,7 @@ export const dashboards = [
     id: 'sync-dashboard',
     name: 'Sync Dashboard',
     description: 'Development synchronization and build tracking',
-    url: 'https://sync.rh-s.com',
+    url: 'https://sync.anyemp.com',
     icon: '🔄',
     color: '#9C27B0',
     category: 'development',

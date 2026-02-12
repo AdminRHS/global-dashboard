@@ -1,7 +1,7 @@
 services:
   global-dashboard:
     image: global-dashboard:latest
-    container_name: global-dashboard
+    container_name: master-dashboard-app
     restart: unless-stopped
     networks:
       - traefik-public

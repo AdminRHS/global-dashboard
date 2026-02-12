@@ -10,9 +10,7 @@ services:
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.global-dashboard.rule=Host(`dash.anyemp.com`)"
-      - "traefik.http.routers.global-dashboard.entrypoints=https"
-      - "traefik.http.routers.global-dashboard.tls=true"
-      - "traefik.http.routers.global-dashboard.tls.certresolver=letsencrypt"
+      - "traefik.http.routers.global-dashboard.entrypoints=http,https"
       - "traefik.http.services.global-dashboard.loadbalancer.server.port=80"
     healthcheck:
       test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost/"]

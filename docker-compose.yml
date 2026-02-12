@@ -1,6 +1,8 @@
 services:
   master-dashboard:
-    image: global-dashboard:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
     container_name: master-dashboard
     restart: unless-stopped
     networks:

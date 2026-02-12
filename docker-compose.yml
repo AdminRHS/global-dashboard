@@ -10,7 +10,7 @@ services:
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.global-dashboard.rule=Host(`dash.anyemp.com`)"
-      - "traefik.http.routers.global-dashboard.entrypoints=websecure"
+      - "traefik.http.routers.global-dashboard.entrypoints=https"
       - "traefik.http.routers.global-dashboard.tls=true"
       - "traefik.http.routers.global-dashboard.tls.certresolver=letsencrypt"
       - "traefik.http.services.global-dashboard.loadbalancer.server.port=80"
